@@ -105,3 +105,6 @@ dist
 
 #Etc.
 .DS_Store
+
+#style.css.map
+.style.css.map
