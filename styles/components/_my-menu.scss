@@ -1,0 +1,57 @@
+.my-menu {
+  $tolltip-size: 12px;
+  position: relative;
+
+  &-content {
+    @include pos-center-x;
+    border-radius: 4px;
+    box-shadow: $dropdown-shadow;
+
+    &::before,
+    &::after {
+      @include pos-center-x;
+      content: '';
+      display: block;
+      top: -#{$tolltip-size * 2};
+      width: 0;
+      height: 0;
+      border-top: $tolltip-size solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: $tolltip-size solid transparent;
+      border-left: 10px solid transparent;
+    }
+
+    &::before {
+      border-bottom-color: $border;
+    }
+
+    &::after {
+      top: -#{$tolltip-size * 2 - 1px};
+      border-bottom-color: $white;
+    }
+  }
+
+  &-list {
+    padding: 8px;
+    width: 200px;
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: 4px;
+  }
+
+  &-item {
+    a,
+    button {
+      @include flexbox(start);
+      padding: 0 8px;
+      width: 100%;
+      height: 44px;
+      border-radius: 2px;
+      transition: background-color 200ms ease-in-out;
+
+      &:hover {
+        background-color: $background;
+      }
+    }
+  }
+}
