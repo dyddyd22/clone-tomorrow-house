@@ -1,4 +1,6 @@
 .sidebar {
+  $sidebar-width: 240px;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -7,10 +9,14 @@
   height: 100vh;
   background-color: $white;
   overflow-y: auto;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(-#{$sidebar-width}, 0, 0);
   transition: transform 200ms ease-in-out;
   z-index: $sidebar-level;
   overscroll-behavior: contain;
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
 
   &-header {
     padding: 0 12px;
