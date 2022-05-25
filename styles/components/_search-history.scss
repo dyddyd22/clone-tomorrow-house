@@ -26,7 +26,11 @@
   &-item {
     @include flexbox(between);
     position: relative;
+    border-radius: 2px;
 
+    &:hover {
+      background-color: $background;
+    }
     .word-button {
       @include text-style(16, $primary);
       padding: 10px $close-button-size 10px 8px;
@@ -45,6 +49,10 @@
       font-size: 16px;
       color: $tertiary;
       font-weight: 400;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
