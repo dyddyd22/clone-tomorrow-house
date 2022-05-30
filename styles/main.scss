@@ -3,6 +3,7 @@
 @import './constants/breakpoint';
 @import './constants/box-shadow';
 @import './constants/z-index';
+@import './constants/dimensions';
 
 @import './base/fonts';
 @import './base/normalize';
@@ -36,4 +37,5 @@
 @import './layouts/overlay';
 @import './layouts/search-modal';
 @import './layouts/lnb';
+@import './layouts/global-header';
 @import './layouts/global-footer';
