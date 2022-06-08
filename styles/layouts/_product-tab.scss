@@ -1,6 +1,4 @@
 .product-tab {
-  $gird-margin: $sm-margin + $gutter / 2;
-
   position: sticky;
   top: $gnb-height-sm + $lnb-height-sm;
   width: 100%;
@@ -11,7 +9,7 @@
 
   &-list {
     @include flexbox;
-    margin: 0 -#{$gird-margin};
+    margin: 0 -#{$grid-margin};
   }
 
   &-item {
