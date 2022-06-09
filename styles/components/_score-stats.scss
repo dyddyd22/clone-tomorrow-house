@@ -8,6 +8,14 @@
     @include text-style(12, $secondary);
     margin-bottom: 4px;
 
+    &.is-active {
+      dt,
+      .count {
+        font-weight: 700;
+        color: $blue;
+      }
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -28,9 +36,10 @@
         overflow: hidden;
 
         .active-bar {
-          width: 30px;
+          width: 0;
           height: 5px;
           background-color: $blue;
+          border-radius: (5px / 2);
         }
       }
 
