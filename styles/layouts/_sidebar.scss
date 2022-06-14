@@ -59,11 +59,9 @@
     }
 
     .username {
+      @include truncate;
       display: block;
       flex-grow: 1;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
     }
   }
 
